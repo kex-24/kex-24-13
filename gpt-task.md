@@ -1,90 +1,94 @@
-# Galaxy Pets: Collect and Train Your Cosmic Companions
+# Puppy Playtime
 
-For this programming assignment in Java, you are stepping into the shoes of a cosmic trainer, embarking on a journey through the universe to collect and train Galaxy Pets. These are mythical creatures with unique abilities and attributes that you'll be modeling in Java.
+For your second programming assignment, you'll dive into the basics of object-oriented programming (OOP) with Java, focusing on class modeling. This experience will introduce you to key elements of a Java class, enhancing your understanding of object-oriented concepts.
 
 ## Deadline
-This assignment is due before the next scheduled class.
+Make sure to submit your work before the next scheduled class.
 
 ## Instructions
-For instructions on how to complete and submit this assignment, please refer to the assignments section of the course instructions reachable via [assignments section of our course webpage](https://assignments.example.com).
+Refer to the [course instructions](https://gits-15.sys.kth.se/inda-23/course-instructions#assignments) for details on submission guidelines.
 
 ## Preparation
 
-- Complete and understand all questions in Module 2: "Exploring Object-Oriented Programming".
-- Access the OLI material through Canvas or directly via [programming course materials](https://programmingmaterials.example.com).
-
-Note: The OLI material and tasks this year may not perfectly align, so it's okay to read ahead if you did not find everything mentioned.
+- Complete all readings and questions in Module 2: Looking Inside Classes.
+- Use both the Canvas link and the direct webpage link provided in the instructions to access the learning materials.
 
 ## Learning Goals
 
-The goals for this week include understanding how to:
-- Design Java classes.
-- Implement fields and methods within a class.
-- Utilize the `main` method for testing.
-- Understand the concept of object encapsulation.
-- Manage object interaction within a Java application.
+This week, you will focus on:
+- Designing Java classes.
+- Creating and utilizing instance fields.
+- Implementing a constructor method.
+- Using getters and setters.
+- Understanding the dot operator.
+- Printing to the terminal.
+- Working with the `main` method.
+- Exploring scope and variable shadowing.
 
 ## Troubleshooting Guide
+If you encounter any difficulties:
+1. Check the [posted issues](https://gits-15.sys.kth.se/inda-23/help/issues) for similar questions from your peers.
+2. If your problem is unique, create a [New Issue](https://gits-15.sys.kth.se/inda-23/help/issues/new) with a detailed title.
+3. Seek assistance from a TA during the next scheduled lab.
 
-1. Browse the [posted questions](https://forum.example.com/issues) related to this week's assignment. Are others experiencing the same issue?
-2. If not, create a [New Question](https://forum.example.com/issues/new) with a descriptive title beginning with "Week *x*: *summary of problem*".
-3. Seek out further help at the [weekly help sessions](https://helpsessions.example.com) hosted by our team.
+### Assignment Overview
 
-Collaboration with peers is encouraged, but please avoid sharing exact solutions.
+Imagine a park full of adorable puppies, each with unique traits. Your task is to model these puppies in Java, encapsulating their characteristics in a class.
 
-## Assignment Details
+#### Exercise 2.0 Begin the Puppy Adventure!
 
-Your journey through the galactic frontier begins with the creation of unique Galaxy Pets crafted from the essence of cosmic phenomena. Dive into this universe by modeling these creatures in Java. Let your imagination run wild; perhaps a Starlion with the roar of a collapsing star, or a Nebulupi, a wolf made from the gas of a nebulous cloud.
+First, create a new Java file called `Puppy.java` in your `src` folder. This file will house your `Puppy` class. Define your class and proceed to model your very first puppy. Add the main method and create variables to store the puppy's details as follows:
 
-### Task 1: Class Creation
+- `String` name
+- `int` energyLevel
+- `int` happiness
+- `int` hungerLevel
+- `boolean` isAsleep
 
-Start by creating a file named `GalaxyPet.java` inside the `src` directory. Declare the GalaxyPet class within this file.
+Test your code by running the application and ensure everything functions as expected.
 
-### Task 2: Defining Properties
+#### Exercise 2.1 A Pack of Puppies
 
-Our Galaxy Pets need characteristics. Define the following fields within the GalaxyPet class, without assigning any initial values:
+Now, let's create two more puppies, making a total of three puppies in our imaginary park. This manual creation process highlights the limitations of scalability and maintainability, which can be solved using the power of classes and objects.
 
-- String name
-- int energyLevel
-- int cosmicPower
-- int speed
-- boolean asleep
+#### Exercise 2.2 Fields and Objects
 
-### Task 3: Spawning Galaxy Pets
+Refactor your puppy modeling to use fields and objects. Fields should represent each puppy's state and be defined outside the main method but within the class itself. Use the constructor method to instantiate your puppy objects.
 
-In the `main` method of your GalaxyPet class, create and instantiate a "Starlion" with initial values for its characteristics. Use the dot operator to set these attributes directly for now.
+#### Exercise 2.3 Getters and Setters
 
-### Task 4: Encapsulation with Getters and Setters
+Implement getters and setters for each field to encapsulate your data and ensure controlled access. This exercise will make you comfortable using these important class methods.
 
-To encapsulate the inner workings of our Galaxy Pets, change the access modifiers of your fields to `private`. Then, implement getters and setters for each property.
+#### Exercise 2.4 Constructor
 
-### Task 5: Constructing with Constructors
+Enhance your class by adding a constructor method, allowing you to specify all puppy attributes as arguments when creating a new `Puppy` object.
 
-Implement a constructor for the GalaxyPet class that allows setting all characteristics upon instantiation. Create a second pet, "Nebulupi", using this constructor.
+#### Exercise 2.5 Multiple Puppies!
 
-### Task 6: Display Information
+Use the constructor to create two additional puppy objects. Notice how this approach is much more efficient than the manual method used earlier.
 
-Create a method named `displayInfo` within the GalaxyPet class that prints out all information about the pet to the console.
+#### Exercise 2.6 `printInfo()` Method
 
-### Task 7: The Cosmic Challenge
+Create a `printInfo()` method within your class to neatly print all the information about a puppy. This enhances code readability and maintainability.
 
-Galaxy Pets can challenge each other to cosmic duels. Implement a method named `challenge` where one pet can challenge another. The outcome will determine which pet gains cosmic power. Incorporate simple logic based on your chosen attributes.
+#### Exercise 2.7 Puppy Interactions
 
-### Task 8: Understanding Scope and Shadowing
+Add a method to simulate interactions between puppies, such as playing or napping together. This method should modify the puppies' states based on the interaction.
 
-Review examples of scope and variable shadowing provided in the reading materials. Be prepared to adjust your implementation if necessary, focusing on proper usage of the `this` keyword.
+#### Exercise 2.8 Understanding Variable Shadowing
 
-## Final Checklist
+Examine examples of variable shadowing to understand its implications in programming. Be prepared to discuss potential solutions and the use of the `this` keyword to resolve shadowing issues.
 
-- [ ] Created and developed the GalaxyPet class with fields and methods.
-- [ ] Utilized getters and setters for encapsulation.
-- [ ] Implemented constructors for easy object instantiation.
-- [ ] Developed a method displaying a pet's info.
-- [ ] Enabled Galaxy Pets to challenge each other.
+### Checklist
 
-## Bugs and Errors?
+- Create your first puppy using variables inside the main method and print their information.
+- Define fields for the Puppy class: `String name`, `int energyLevel`, and so on.
+- Implement getters and setters for all fields.
+- Create a constructor for the Puppy class.
+- Design a `printInfo()` method to display a puppy's details.
+- Add a method to model puppy interactions.
+- Examine and understand variable shadowing examples.
 
-If you encounter any inconsistencies or errors with this assignment, please report them by creating a [New Issue](https://forum.example.com/issues/new) with the title "Week *x* Error: *summary of error here*". Contributors identifying bugs will be acknowledged.
+### Reporting Bugs
 
-
-This personalized task should help the student understand the same core programming concepts as the model task, framed around an engaging theme of collecting and training cosmic creatures.
+Should you find any inconsistencies or errors in the assignment, please open a new issue with the title "Task X Error: summary of error" for acknowledgment and potential rewards.
